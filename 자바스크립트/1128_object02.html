@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+    <style>
+        
+    </style>
+    <script>
+       let name = "하의숙";
+       let kor = 80;
+       let eng = 90;
+       let math = 70;
+       let total = kor + eng + math;
+       document.write(name + "님의 총점은"+ total+"점입니다"+"<br>");
+       let student = {name: "홍길동", kor: 100, eng: 90, math: 70};
+       student.total = student.kor + student.eng +student.math;
+       document.write(student.name + "님의 총점은 "+ student.total + "점입니다<br>" );
+       
+    //    변수로 만들면 필요할때마다 일일이 변수값을 만들어줘야 하지만 밑에 있는 서식들처럼 {중괄호}를 통해 하나의 객체 (object)로 만든다면 하나의 객체 안에 여러가지 데이터를 자유롭게 서술할 수 있는 차이점이 있다
+    // **출력은 function을 사용해도 되고 그대로 출력해도 되고 선택사항
+       let student1 = {
+            name: "홍길동", 
+            kor: 100, 
+            eng: 90, 
+            math: 70
+        };
+        let student2 = {};
+            student2.name = "홍길동"; 
+            student2.kor = 100; 
+            student2.eng = 90; 
+            student2.math = 70;
+
+        let student3 = new Object();
+        student3.name = "홍길동"; 
+        student3.kor = 100; 
+        student3.eng = 90; 
+        student3.math = 70;
+        student3.total = student3.kor + student3.eng + student3.math;
+        student3.fnc = function() {
+           document.write(student3.name + "님의 총점은 "+ student3.total+"점 입니다<br>");
+        }
+        student3.fnc();
+
+        let student4 = new Object();
+        student4.name = "임수연";
+        student4.kor = 65;
+        student4.eng = 70;
+        student4.math = 50;
+        student4.total = student4.kor + student4.eng + student4.math;
+        student4.fnc = function() {
+            document.write(student4.name + "님의 총점은" + student4.total+"점 입니다");
+        }
+        // function이라는 메소드 실행구문에 fnc라는 이름을 주고 밑에 fnc라는 이름을 가진 실행구문을 호출하여 실행시킴
+        student4.fnc();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

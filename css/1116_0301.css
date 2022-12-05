@@ -1,0 +1,169 @@
+@charset "utf-8";
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+        }
+        .grid-container {
+            width: 1200px;
+            display: grid;
+            margin: 0 auto;
+            background: #fff;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 100px 300px 200px 100px;
+            /* align-content: 수직의 위치를 정해줌; justify-content: 수평의 가운데를 정해줌; */
+        }
+        .grid-item:first-child {
+            grid-column: 1 / span 3;
+            background: #fff;
+            display: grid;
+            grid-template-columns: 200px auto;
+            align-items: center;
+        }
+        .grid-item:nth-child(2) {
+            grid-column: 1 / span 3;
+            background: #ccc;
+            overflow: hidden;
+        }
+        .grid-item:nth-child(2) img {
+            width: 1200px;
+            height: 300px;
+            object-fit: cover;
+            object-position: top;
+        }
+        .grid-item:nth-child(3) {
+            width: 500px;
+        }
+        .grid-item:last-child {
+            grid-column: 1 / 4;
+            background: beige;
+        }
+        .logo > img {
+            width: 200px;
+            height: 40px;
+        }
+        .menu {
+            width: 1000px;
+            
+        }
+        .menu > ul {
+            width: 800px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: end;
+            text-align: center;
+        }
+        .menu > ul > li {
+            width: 25%;
+            position: relative;
+        }
+        .menu > ul:hover ul {
+            height: 120px;
+        }
+        .menu > ul > li:hover {
+            background: #000;
+        }
+        .menu > ul > li:hover > a {
+            color: #fff;
+        }
+        .menu > ul > li > a {
+            width: 100%;
+            display: block;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            border: 1px solid #000;
+            color: #000;
+        }
+        .menu > ul > li > ul {
+            width: 100%;
+           height: 0;
+           overflow: hidden;
+           position: absolute;
+           border: 1px solid #000;
+           z-index: 1;
+        }
+        .menu > ul > li > ul > li > a {
+            width: 100%;
+            line-height: 30px;
+            display: block;
+            color: #000;
+            text-align: center;
+            background: #fff;
+        }
+        .menu > ul > li > ul > li:hover > a {
+            background: #000;
+            color: #fff;
+        }
+        input[type=radio] {
+            display: none;
+        }
+        .grid-item:nth-child(3) > .btntitle {
+            position: relative;
+            width: 100%;
+            margin: 10px auto;
+        }
+        .grid-item:nth-child(3) > .btntitle > li > label {
+            position: absolute;
+            display: block;
+            width: 80px;
+            height: 30px;
+            border: 1px solid #000;
+            text-align: center;
+            line-height: 30px;
+            background: #ccc;
+            z-index: 1;
+        }
+        .grid-item:nth-child(3) > .btntitle > li:nth-child(2) > label {
+            left: 80px;
+        }
+        .con {
+            position: relative;
+            top: 30px;
+        }
+        .con > .first {
+            border: 1px solid #000;
+        }
+        .con > .second ul {
+            position: absolute;
+            display: flex;
+            border: 1px solid #000;
+        }
+        .con > .second ul li img {
+            position: relative;
+            width: 130px;
+            height: 140px;
+        }
+        .con li a {
+            display: block;
+            width: 250px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            margin-right: 20px;
+        }
+        #notice:checked ~ .btntitle li:first-child label {
+            background: #fff;
+            border-bottom: none;
+        }
+        #gallery:checked ~ .btntitle li:nth-child(2) label {
+            background: #fff;
+            border-bottom: none;
+        }
+        /* #notice:checked .first {
+            display: block;
+        } */
+        #notice:checked ~ .con .second ul {
+            display: none;
+        }
+        #gallery:checked ~ .con .first {
+            display: none;
+        }
+        .con .first a:hover {
+            text-decoration: underline;
+        }

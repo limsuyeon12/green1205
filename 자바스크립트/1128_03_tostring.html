@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const fruits = ["사과", "Orange", "딸기", "Mango"];
+        document.write(fruits+"<br>");
+        document.write(fruits.toString()+"<br>");
+        document.write(fruits.join("_")+"<br>");
+        fruits.pop();
+        document.write(fruits+"<br>");
+        fruits.push("바나나");
+        document.write(fruits+"<br>");
+        let fruit = fruits.shift();
+        document.write(fruits+"<br>");
+        fruits.unshift("Lemon");
+        document.write(fruits+"<br>");
+        const arr1 = ["하나","둘","셋"];
+        const arr2 = ["one","two","three"];
+        document.write(arr1.concat(arr2)+"<br>");
+        const arr3 = ["하나","둘","셋"];
+        const arr4 = ["one","two","three"];
+        const arr5 = ["html","css","css3"];
+        document.write(arr3.concat(arr4,arr5)+"<br>");
+        // concat > 다양한 변수들을 하나로 결합해줌
+        arr5.splice(1, 0, "레몬" , "오렌지");
+        // 첫번째 1(요소를 넣을 위치의 번호) 두번째 0 (삭제할 요소)
+        document.write(arr5+"<br>");
+        
+        document.write(arr3.slice(1,2)+"<br>");
+        document.write(fruits.sort()+"<br>");
+        //document.write(arr5.sort()+"<br>");
+        document.write(arr5.reverse()+"<br>");
+        const grade = ["3학년","5학년","2학년","1학년","6학년","4학년"];
+        document.write(grade.sort().reverse()+"<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,196 @@
+@charset "utf-8";
+* {
+    padding: 0;
+    margin: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font: Arial , "맑은 고딕" sans-serif ;
+}
+.grid_container {
+    width: 1200px;
+    margin: 10px auto;
+    display: grid;
+    background: #fff;
+    grid-template-columns: repeat(1fr, 3);
+    grid-template-rows: 100px 300px 200px 100px;
+}
+.grid_item:first-child {
+    grid-column: 1 / span 3;
+    display: grid;
+    grid-template-columns: 200px auto;
+    align-items: center;
+}
+.grid_item:nth-child(2) {
+    grid-column: 1/ span 3;
+}
+.grid_item:nth-child(3) , .grid_item:nth-child(4) , .grid_item:nth-child(5) {
+    width: 400px;
+}
+.grid_item:last-child {
+    grid-column: 1/ span 3;
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    align-items: center;
+}
+.menu {
+    width: 800px;
+    margin: 0 auto;
+    background: #fff;
+}
+.menu > ul {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+.menu > ul > li {
+    width: 25%;
+    position: relative;
+}
+.menu > ul > li > a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #000;
+    text-align: center;
+    color: #000;
+    background: #fff;
+}
+.menu > ul > li:hover > a {
+    background: #000;
+    color: #fff;
+}
+.menu > ul > li > ul {
+    width: 100%;
+    position: absolute;
+    height: 0;
+    overflow: hidden;
+}
+.menu > ul > li > ul > li > a {
+    width: 100%;
+    line-height: 30px;
+    display: block;
+    text-align: center;
+    background: #fff;
+    font-size: 14px;
+    color: #000;
+}
+.menu > ul:hover > li > ul {
+    height: 100px;
+}
+.menu > ul > li > ul > li:hover a {
+    text-decoration: underline;
+    background: darkgreen;
+    color: #fff;
+}
+.grid_item:nth-child(2) img {
+    width: 1200px;
+    height: 300px;
+    object-fit: cover;
+}
+input[type=radio] {
+    display: none;
+}
+.btntitle {
+    display: flex;
+    margin: 10px auto;
+}
+.btntitle li label {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 10px 10px 0 0 ;
+    padding: 5px;
+    background: #ccc;
+    z-index: 1;
+}
+.con {
+    width: 100%;
+    position: relative;
+    top: -12px;
+}
+.con .first {
+    border: 1px solid #000;
+}
+.con .first a {
+    display: block;
+    font-size: 14px;
+    width: 250px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: 20px;
+    padding-right: 30px;
+    padding-left: 5px;
+}
+.con .first a:hover {
+    text-decoration: underline;
+}
+#notice:checked ~ .btntitle li:first-child label {
+    background: darkgreen;
+    color: #fff;
+    border-bottom: none;
+}
+#gallery:checked ~ .btntitle li:nth-child(2) label {
+    background: darkgreen;
+    color: #fff;
+    border-bottom: none;
+}
+.second ul {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #000;
+}
+.second ul li img {
+    width: 120px;
+    height: 120px; 
+    padding: 5px;
+    padding-top: 8px;
+}
+#notice:checked ~ .con .second ul {
+    display: none;
+}
+#gallery:checked ~ .con .first {
+    display: none;
+}
+.grid_item:nth-child(4) img {
+    width: 400px;
+    height: 200px;
+}
+.grid_item:last-child .logo2 {
+    width: 100%;
+    margin: 0 auto;
+}
+.grid_item:last-child .copy {
+    width: 100%;
+}
+.grid_item:last-child .copy p {
+    text-align: center;
+    font-size: 10px;
+    padding: 10px;
+}
+.grid_item:last-child > .family {
+    width: 100%;
+    margin: 0 auto;
+}
+.grid_item:last-child > .family ul li {
+    text-align: center;
+}
+.grid_item:last-child > .family ul li a {
+    display: block;
+    text-align: end;
+    padding: 5px;
+    color: darkgreen;
+    font-size: 13px;
+}
+.grid_item:last-child > .family ul li:hover a {
+    color: #000;
+    text-decoration: underline;
+}

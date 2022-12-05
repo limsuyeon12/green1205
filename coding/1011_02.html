@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            height: 100px;
+            background-repeat: no-repeat;
+            /* 배경을 반복시키지 않는서식 */
+        }
+        .bg1 {
+            background-color: aqua;
+        }
+        .bg2 {
+            background-color: blue;
+        }
+        .bg3 {
+            background-color: blueviolet;
+        }
+        .bg4 {
+            background-color: rgb(104,44,);
+        }
+        .bg5 {
+            background-color: #f00;
+            opacity: 0.5;
+        }
+        .bg6 {
+            background-image: url(images/img_flwr.gif);
+            background-size: 50% 10%;
+            background-repeat: repeat;
+            /* 퍼센트로 이미지사이즈를 주면 비율이 깨질수 있다 */
+        }
+        .bg7 {
+            background-image: url(images/img_flwr.gif);
+            background-size: cover;
+            width: 100px;
+            height: 300px;
+            /* 커버는 이미지 비율이 안깨지지만 가로세로중 더 큰사이즈에 맞춘다 */
+            /* 단점 이미지가 짤릴수 있음 */
+        }
+        .bg8 {
+            background-image: url(images/img_flwr.gif);
+            background-size: contain;
+            width: 100px;
+            height: 300px;
+            /* 컨테인은 이미지 비율이 안깨지지만 가로세로중 더 작은사이즈에 맞춘다 */
+            /* 단점 빈공간이 남을 수 있음 */
+        }
+        .bg9 {
+            background-image: url(images/img_flwr.gif);
+            background-repeat: round;
+        }
+        .bg10 {
+            background-image: url(images/img_flwr.gif);
+            background-repeat: space;
+        }
+        .bg11 {
+            background-image: url(images/img_flwr.gif);
+            background-repeat: unset;
+        }
+        .bg12 {
+            background-image: url(images/img_flwr.gif);
+            background-repeat: repeat;
+        }
+    </style>
+</head>
+<body>
+    <p class="bg1">bg1</p>
+    <p class="bg2">bg2</p>
+    <p class="bg3">bg3</p>
+    <p class="bg4">bg4</p>
+    <p class="bg5">bg5</p>
+    <p class="bg6">bg6</p>
+    <p class="bg7">bg7</p>
+    <p class="bg8">bg8</p>
+    <p class="bg9">bg9</p>
+    <p class="bg10">bg10</p>
+    <p class="bg11">bg11</p>
+    <p class="bg12">bg12</p>
+</body>
+</html>

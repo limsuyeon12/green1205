@@ -1,0 +1,155 @@
+@charset "uft-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.wrap {
+    width: 1600px;
+    margin: 0 auto;
+}
+.wrap .head {
+    width: 1200px;
+    height: 120px;
+    margin: 0 auto;
+    text-align: center;
+}
+.wrap .head ul {
+    display: flex;
+    justify-content: end;
+    margin-top: -50px;
+}
+.wrap .head ul li a {
+    padding: 0 15px;
+    color: black;
+}
+.wrap > .top_menu {
+    width: 1200px;
+    margin: 0 auto;
+}
+.wrap > .top_menu > ul {
+    display: flex;
+    justify-content: space-around;
+}
+.wrap > .top_menu > ul > li {
+    position: relative;
+    
+}
+.wrap > .top_menu > ul > li a {
+    padding: 20px;
+    font-size: 25px;
+    color: black;
+}
+.wrap > .top_menu > ul > li a::after {
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 3px;
+    background: #000;
+    left: 22px;
+    bottom: 0;
+    transform: scale(0);
+    transition: all 1s;
+    
+}
+.wrap > .top_menu > ul > li:hover a::after {
+    transform: scale(1);
+}
+.top_img {
+    width: 1600px;
+    margin: 50px auto;
+    position: relative;
+}
+.top_img ul {
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+}
+.top_img ul li {
+    width: 20px;
+    height: 20px;
+    background: #000;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+.best {
+    width: 960px;
+    margin: 0 auto;
+}
+.best p {
+    text-align: center;
+    font-size: 30px;
+}
+.best_item {
+    width: 960px;
+    margin: 50px auto;
+}
+.best_item ul {
+    display: flex;
+    justify-content: center;
+}
+.best_item ul li {
+    padding: 0 30px;
+    transform: scale(1);
+    transition: all 1s;
+}
+.best_item ul li:hover {
+    transform: scale(1.1);
+}
+.middel_ment {
+    width: 1200px;
+    margin: 100px auto;
+}
+.middel_ment ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+.middel_ment ul li {
+    font-size: 30px;
+}
+.middel_img {
+    width: 1200px;
+    margin: 50px auto;
+}
+.middel_img ul {
+    display: flex;
+    justify-content: space-evenly;
+} 
+.middel_img ul li:hover {
+    border: 1px solid #000;
+}
+.box_ll {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+.box {
+    width: 500px;
+    height: 324.56px;
+}
+.box .box_tom {
+    display: flex;
+}
+.box .box_tom > div {
+    width: 33.333%;
+    height: 324.56px;
+    transition: all 1s;
+}
+.box_tom .left {
+    background: url(../images/present-image-sample01.jpg) no-repeat;
+}
+.box_tom .center {
+    background: url(../images/present-image-sample02.jpg) no-repeat;
+}
+.box_tom .right {
+    background: url(../images/present-image-sample03.jpg) no-repeat;
+}
+.box_tom div:hover {
+    width: 100%;
+}
+.box_tom div:not() hover

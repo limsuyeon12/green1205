@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .search_wrap {
+            width: 90%;
+            margin: 0 auto;
+        }
+        .search {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 5px 0;
+            border-radius: 5px;
+        }
+        .search a {
+            display: inline-block;
+            width: 10%;
+        }
+        .search input {
+            width: 90%;
+            background: rgba(0, 0, 0, 0);
+            border: none;
+        }
+        .search input::placeholder {
+            color: #000;
+            text-align: center;
+        }
+        button {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div clss="search_wrap">
+        <div class="search">
+            <a href="#">돋보기</a><input type="search" placeholder="search"><button>취소</button>
+        </div>
+    </div.search_wrap>
+</body>
+</html>

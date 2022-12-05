@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input</title>
+    <style>
+        input[type=radio] {
+            display: none;
+        } 
+        img {
+            width: 500px;
+            display: none;
+        }
+        #one:checked ~ p img:first-child {
+            display: block;
+        }
+        #two:checked ~ p img:nth-child(2) {
+            display: block;
+        }
+        #three:checked ~ p img:last-child {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <input type="radio" name="photo" id="one" checked>
+        <input type="radio" name="photo" id="two">
+        <input type="radio" name="photo" id="three">
+        <!-- name이 같아야 같은 그룹으로 인식해서 그중 하나만 선택할수있음 -->
+        <!-- id는 lable이랑 같이 쓰려고 줘여됨 -->
+        <p>
+            <label for="one">photo1</label>
+            <label for="two">photo2</label>
+            <label for="three">photo3</label>
+        </p>
+        <p>
+            <img src="images/photo1.jpg" alt="photo1">
+            <img src="images/photo2.jpg" alt="photo2">
+            <img src="images/photo3.jpg" alt="photo3">
+        </p>
+    </form>
+</body>
+</html>

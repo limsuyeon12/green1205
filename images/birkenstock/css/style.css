@@ -1,0 +1,196 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+body {
+    font-family: Arial, "맑은 고딕";
+}
+#top {
+    background: #003f85;
+}
+.top_wrap {
+    width: 100%;
+    max-width: 1182px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    /* padding: 10px 0; */
+    display: flex;
+    justify-content: end;
+}
+.top_wrap ul {
+    display: flex;
+}
+.top_wrap ul li a {
+    font-size: 14px;
+    color: #fff;
+}
+.top_wrap ul li a::after {
+    display: block;
+    content: "/";
+    padding: 0 10px;
+}
+.top_wrap ul li:last-child a::after {
+    content: "";
+}
+.top_wrap ul li a:hover {
+    text-decoration: underline;
+}
+#logo {
+    width: 1182px;
+    margin: 50px auto;
+    text-align: center;
+}
+/* 이미지 속성을 갖고있는 애들은 textalingn 이 됨 */
+#gnb, #visual {
+    width: 837px;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+#gnb ul {
+    display: flex;
+    justify-content: space-around;
+}
+#visual{
+    height: 200px;
+}
+#visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* 이미지 비율을 맞춰주는 서식*/
+    /* cotain 작은 비율에 맞춤, cover 큰 비율에 맞춤 */
+    /* object-position: center; */
+    object-fit: 0 0;
+}
+#icon {
+    width: 837px;
+    margin: 0 auto;
+    /* 마진 영오토 주는이유: 컨텐츠를 가운데로 보내기위헤 */
+}
+#icon ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+#icon ul li {
+    position: relative;
+    /* p태그에게 크기영향을 주기위해 주는 서식 */
+    /* 그럼p태그가 릴렉티브를 찾아감 */
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+#icon p {
+    display: none;
+    position: absolute;
+    /* p태그를 li에서 단독으로 분리해주는 서식 */
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    border-radius: 50%;
+    left: 2px;
+    top: 4px;
+    background: #fff;
+    text-align: center;
+    line-height: 100px;
+    text-transform: capitalize;
+    /* 단어의 앞글자만 대문자로 바꿔주는 서식 */
+    /* uppercase 다 대문자로 바꿔주는 서식 */
+    letter-spacing: -1px;
+    /* 글자와 글자사이 간격좁히기 */
+}
+#icon ul li:hover p {
+    display: block;
+}
+#item {
+    width: 1300px;
+    margin: 20px auto;
+}
+#item ul {
+    display: flex;
+    justify-content: space-around;
+}
+#item ul li {
+    position: relative;
+    width: 394px;
+    height: 333px;
+}
+#item p {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    background: #333;
+    opacity: 70%;
+    padding-top: 150px;
+    box-sizing: border-box;
+    /* 패딩을 줘서 글씨위치를 옮겨도 세로길이가 늘어나지 않게하는 서식 */
+    color: #fff;
+}
+#item ul li:hover p {
+    display: block;
+}
+#banner 
+{
+    width: 1182px;
+    margin: 0 auto;
+}
+#banner ul {
+    display: flex;
+    justify-content: space-around;
+}
+#banner li:first-child { 
+    background: #ccc;
+    width: 380px;
+    height: 312px;
+}
+#banner p {
+    color: #003f85;
+    padding-top: 80px;
+    padding-left: 90px;
+    box-sizing: border-box;
+}
+#banner a {
+    display: inline-block;
+    padding-top: 90px;
+    padding-left: 100px;
+    box-sizing: border-box;
+}
+#foot {
+    width: 100%;
+    background: #002856;
+}
+.foot_wrap {
+    width: 1182px;
+    /* max-width: 1182px; */
+    margin: 0 auto;
+    margin-top: 100px;
+    height: 50px;
+}
+#foot ul {
+    display: flex;
+    justify-content: space-between;
+}
+#foot .foot_wrap ul li {
+    line-height: 50px;
+    /* 줄과 줄사이의 간격도 맞지만 정확히는 한개체가 시작하고 다음개체가 시작하는 그 사이의 공간을 이야기함 */
+}
+#foot .foot_wrap ul img {
+    vertical-align: middle;
+}
+/* 이미지만 라인헤이트가 안먹을땐 이미지만 묶어서 버티칼 올라인으로 위치 바꿔주기 */
+
+
+
+

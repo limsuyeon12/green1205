@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ex {      
+            background: lightblue;       
+             width: 200px;        
+            height: 100px;       
+             /* white-space: pre-wrap;      } */
+          }
+            .ex1 {
+                word-break: break-word;
+            }
+            .ex2 {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .ex3 {
+                transform: translate(400px, -50px);
+            }
+            .ex4 {
+                transform: rotate(-90deg);
+            }
+            .ex5 {
+                transform: scaleX(0.5);
+            }
+            .ex6 {
+                transform: skew(30deg,30deg);
+            }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="ex ex1">L      orem ipsum dolor sit amet, 
+            consectetuer adipiscing elit. 무궁화 꽃이 피었습니다 무궁화 꽃이 피었습니다 무궁화 꽃이 피었습니다</div>
+   </div>
+<pre>
+L      orem ipsum dolor sit amet,  
+consectetuer adipiscing elit.
+</pre>
+<div class="ex ex2">L      orem ipsum dolor sit amet, 
+    consectetuer adipiscing elit. 무궁화 꽃이 피었습니다 무궁화 꽃이 피었습니다 무궁화 꽃이 피었습니다</div>
+    <div>
+     <div class="ex ex3">트랜스 레이트</div>
+</div>
+<div>
+    <div class="ex ex4">로테이트</div>
+</div>
+<div>
+    <div class="ex ex5">스케일</div>
+</div>
+<div class="ex ex6">기울이기</div>
+</body>
+</html>

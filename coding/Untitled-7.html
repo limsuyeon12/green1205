@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p { 
+        color: #ff0; 
+        }
+    .first {
+    color: #f00; 
+    }
+    /* important를 주면 가장 강력해짐 > 다음순서로는 인라인 방식으로 스타일을 준것 */
+    
+    #one {
+        color: #0ff !important;
+    }
+    </style>
+</head>
+<body>
+    <p class="first" id="one" style="color: #000;">first</p>
+    <!-- 여기안에 스타일을 준것이 인라인방식 -->
+    <p class="second" id="two">second</p>
+    <p class="third" id="three">third</p>
+    <p class="first">first</p>
+    <p class="second">second</p>
+    <p class="third">third</p>
+    <!-- id는 한번만 사용가능 , class는 중복가능 : class로 one이라는 새로운 이름을 줌*유투브참고 -->
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: #ccc;
+            /* transition-property: width; */
+            /* 시간을 주고싶은 속성을 정의 */
+            /* transition-duration: 1s; */
+            /* 주고싶은 시간 */
+            /* transition-timing-function: ease; */
+            /* 처음과 끝과 중간의 속도를 다르게 해주는 속성 */
+            /* transition-delay: 1s; */
+            /* 마우스 올려놓고 동작되기 전 기다리는 시간 */
+            transition: width 1s ease 1s; 
+            /* > 하나로 정리할 수 있음 */
+        }
+        div:hover {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

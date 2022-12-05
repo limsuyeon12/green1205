@@ -1,0 +1,32 @@
+@charset "uft-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.top_wrap {
+    width: 1280px;
+    background: #633c6f;
+}
+.top_wrap ul:first-child {
+    width: 1280px;
+    display: flex;
+    justify-content: center;
+    margin-left: 400px;
+}
+.top_wrap ul li a {
+    color: #633c6f;
+    background: #fff;
+}
+.top_wrap ul:nth-child(2) {
+    display: flex;
+    justify-content: center;
+}
+.top_wrap ul:last-child {
+    
+}

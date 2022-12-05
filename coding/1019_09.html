@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .out {
+            position: relative;
+            /* out에 포지션을 줌으로써 in의 네모는 out안에서만 움직이게 된다 */
+            width: 500px;
+            height: 500px;
+            margin: 100px auto;
+            border: 1px solid #000;
+            /* overflow: hidden; */
+            /* overflow > 넘치는 것을 숨기는 기능이있음 */
+        }
+        .in {
+            position: absolute;
+            /* 위치를 새로 다시 정의해주는 태그 */
+            width: 50px;
+            height: 50px;
+            /* background: #ccc;
+            left: 100px;
+            top: 100px; */
+            /* left와 top으로 이동시킬 in이라는 네모를 이동시킬 위치를 정해줄건데 position>relative로 어디서부터 이동할 위치의 시작인지 알려주어 in의 위치이동을 도와줌 */
+        }
+        .in:first-child {
+            background: #f00;
+            left: 0;
+            top: 0;
+            z-index: 1;
+        }
+        .in:nth-child(2) {
+            background: #0f0;
+            left: 20px;
+            top: 20px;
+        }
+        .in:nth-child(3) {
+            background: #00f;
+            left: 40px;
+            top: 40px;
+            z-index: -1;
+        }
+        /* z-index 양해값의 개체는 위로 올라오고 음해값의 개체는 밑으로 내려감 */
+
+    </style>
+</head>
+<body>
+    <div class="out">
+        <div class="in"></div>
+        <div class="in"></div>
+        <div class="in"></div>
+    </div>
+</body>
+</html>

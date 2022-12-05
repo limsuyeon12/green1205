@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        ul.radi {
+            width: 100px;
+            margin: 0 auto;
+            display: flex;
+        }
+        ul.box {
+            width: 100px;
+            height: 120px;
+            margin: 0 auto;
+        }
+        ul.box li {
+            width: 0;
+            height: 0;
+            border-left: 10px solid #000;
+            border-bottom: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 10px solid transparent;
+        }
+        ul.btn {
+            width: 100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+   <div>
+       <ul class="radi">
+            <li><input type="radio" name="btn" id="start" checked></li>
+            <li><input type="radio" name="btn" id="stop"></li>
+       </ul>
+        <ul class="box">
+            <li></li>
+        </ul>
+        <ul class="btn">
+            <li><label for="start">start</label></li>
+            <li><label for="stop">stop</label></li>
+        </ul>
+   </div>
+</body>
+</html>

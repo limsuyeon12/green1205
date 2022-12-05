@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>겨울연가</title>
+    <style>
+        img {
+            display: block;
+        }
+        a {
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+            /* a서식은 인라인요소이기 때문에 가로,세로 값을 주어도 변하지않으므로
+            display서식으로 인라인에서-블록 속성으로 바꿔주어 줄을 같이 이용하고, 가로세로값을 줄수있게 만듬 */
+            color: #000;
+            text-decoration: none;
+            /* 텍스트 데코레이션 > 글자밑에 줄 등 꾸며주는 기능 - none으로 놓으면 사라짐 */
+            border: 1px solid #000;
+            text-align: center; 
+            line-height: 50px;
+            /* text-align:가로의 중심으로 텍스트를 옮기는값
+            line-height:세로의 중심으로 텍스트를 옮기는값 */
+        }
+        a:hover {
+            text-decoration: underline;
+            text-underline-offset: 5px;
+        }
+        /* 가상선택자 서식 : 밑에 */
+        p > a {
+            display: block; 
+            border: none;
+            color: #f00;
+        }
+        p > a::before {
+            content: "가상";
+            color: blue;
+        }
+        p > a::after {
+            content: "선택자"; 
+        }
+        /* hover는 마우스에 관한 서식이므로 마우스를 갖다댔을때 언더라인이 생기도록 만들어줌 */
+    </style>
+</head>
+<body>
+    <img src="images/pic1.jpg" alt="pic1">
+    <!-- 인라인요소 옆에 br서식을 주어 줄을 바꿔줄수있음 -->
+    <a href="#" target="_blank">Homepage</a>
+    <a href="#">Nav Tage</a>
+    <p><a href="#">문단태그</a></p>
+    <!-- p안에 a를 줄경우 a에게 준 스타일이 같이 적용됨 (자식요소) -->
+    <!-- 주소가 정해지지 않았을경우 임시로#을 넣어준다 -->
+    
+</body>
+</html>

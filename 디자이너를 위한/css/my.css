@@ -1,0 +1,146 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+html {
+    width: 100%;
+}
+body {
+    width: 100%;
+    font-family: Arial , "맑은 고딕" , 돋움 , Doctum , sans-serif;
+    background: dimgray;
+}
+.box {
+    width: 100%;
+    margin: 0 auto;
+}
+.wrap {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.top_right {
+    width: 70px;
+    height: 80px;
+    background: rgb(247, 208, 34);
+    animation: top 1s;
+}
+.top_right > span {
+    display: block;
+    font-size: 11px;
+    color: #000;
+    text-align: start;
+    margin-top: 20px;
+    margin-left: 8px;
+}
+.header {
+    margin-left: 20px;
+}
+.header > p {
+    font-size: 33px;
+    color: beige;
+    animation: down 1s;
+}
+.ment > ul li {
+    margin-top: 100px;
+    margin-left: 20px;
+    font-size: 30px;
+    color: beige;
+    animation: down 1s;
+}
+@keyframes down {
+    0% {transform: translateY(-50px); color: aqua; opacity: 0;}
+    100% {transform: translateY(0); color: beige; opacity: 1;}
+}
+.sub_ment {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.sub_ment > span {
+    display: block;
+    font-size: 12px;
+    color: beige;
+    animation: down 1s;
+}
+@keyframes top {
+    from {opacity: 0;
+        transform: translateY(-50px);}
+    to {opacity: 1;
+        transform: translateY(0);}
+}
+.circle > ul {
+    /* width: 600px; */
+    margin: 0 auto;
+    
+    display: flex;
+    justify-content: left;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.circle > ul li {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    transform-origin: bottom;
+}
+.circle > ul li:first-child {
+    border: 1px solid #000;
+    animation: circle 1s linear;
+    animation-delay: 0s;
+}
+.circle ul li:nth-child(2) {
+    background: rgb(247, 208, 34);
+    animation: circle 1s;
+    animation-delay: 0.1s;
+    margin-left: -150px;
+}
+.circle > ul li:nth-child(3) {
+    margin-left: -150px;
+    background: yellow;
+    animation: circle 1s;
+    animation-delay: 0.2s;
+}
+.circle > ul li:first-child:hover {
+    border: 1px solid #000;
+    background: blue;
+    
+}
+.circle > ul li:nth-child(2):hover {
+    background: blue;
+    
+}
+.circle > ul li:nth-child(3):hover {
+    background: blue;
+}
+@keyframes circle {
+    0% {opacity: 0.5; transform: scale(0); }
+    100% {opacity: 1; transform: scale(1); }
+}
+footer {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    bottom: 0;
+    background: darkslategrey;
+}
+footer > ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+footer > ul li a {
+    display: block;
+    margin-top: 25px;
+    color: gray;
+}
+footer > ul li:checked a {
+    color: #fff;
+}

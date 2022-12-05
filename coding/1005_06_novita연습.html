@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        p {
+            display: inline-block;
+            /* 인라인에서 블록으로 바꾸어 줄을 바꿀수 있도록설정 후 body에 텍스트얼라인을 주어 도형을 센터로 모아주기 */
+            width: 420px;
+            height: 595px;
+            background-color: #ccc;
+        }
+        p:first-child {
+            border-radius: 210px 210px 100px 0; 
+            /* 라디오스 > 모형을 둥글게 만드는정도의 수치 ex)0이면 사각모서리이다*/
+        }
+        p:last-child {
+            border-radius: 100px 0px 210px 210px;
+        }
+    </style>
+</head>
+<body>
+    <p></p>
+    <p></p>
+</body>
+</html>

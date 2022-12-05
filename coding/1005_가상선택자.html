@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자</title>
+    <!-- 가상요소 선택자 > 유툽참고 : 실제로는 없는 요소...? -->
+    <style>
+        p:first-child {
+            color: #f00;
+        }
+        p:nth-child(2) {
+            color: blueviolet;
+        }
+        p:nth-child(3) {
+            color: blue;
+        }
+        p:nth-child(4) {
+            color: deeppink;
+        }
+        p:last-child {
+            color: aqua;
+        }
+        p::first-letter {
+            font-size: 30px
+        }
+        /* 첫번째 폰트 크기만 바꿔주는것 */
+        p::first-line {
+            text-decoration: underline;
+        }
+        /* p는 요소에따라 각각 서식을 다르게 줄수 없으므로 자식요소(child)를 넣어서 첫재딸 둘째딸로 각각 설정해줌 */
+        a:focus {
+            /* outline: none; */
+            /* focus에 대해 유투브 참고 > tab키가 인식되는 요소? */
+        }
+    </style>
+</head>
+<body>
+    <h1>heading태그입니다</h1>
+    <!-- p는 블록레벨 요소이므로 옆에 아무줄도 올수없음 -->
+   <p>첫번째 줄입니다.</p>
+   <p>두번째 줄입니다.</p>
+   <p>세번째 줄입니다.</p>
+   <p>네번째 줄입니다.</p>
+   <p>다섯번째 줄입니다.</p>
+   <a href="#">1</a>
+   <a href="#">2</a>
+   <a href="#">3</a>
+   <a href="#">4</a>
+</body>
+</html>

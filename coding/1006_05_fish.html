@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>짱뚱어</title>
+    <style>
+        img {
+            vertical-align: top;
+            /* 이미지의 위치를 옮겨주는 서식 : 인라인속성만 적용가능*/
+            border: 1px solid #000;
+        }
+        ul {
+            display: inline-block;
+            list-style: none;
+            margin-top: 0;
+            /* 위쪽top의 margin(바깥여백)만 간격조절*/
+        }
+        ul li {
+            line-height: 2;
+            /* line-height 줄(행)간의 간격 */
+        }
+    </style>
+</head>
+<body>
+    <h1>짱뚱어</h1>
+    <img src="images/fish.jpg" alt="fish">
+    <ul>
+        <li>농어목 망둑어과의 바닷물고기</li>
+        <li><b>학 명</b> : Boleophchalmus pectinirostris</li>
+        <li><strong>분류</strong> : 농어목 망둑어과</li>
+        <!-- b , strong은 글자두께를 강조시키는 태그이다 -->
+        <li>생활방식 : 공기호흡, 뻘을 살금살금 기어다니면서 먹이를 먹음</li>
+        <li>크기 : 몸길이 약 18cm</li>
+        <li>채색 : 푸른색,  배쪽 연한 색, 몸쪽 흰색의 작은 점이 흩어져 있음</li>
+        <li>분포지역 : 서부태평양의 열대 해역</li>
+    </ul>
+    <!-- 인라인요소 옆에는 무언가가 올수있고, 블록요소 옆에는 못온다(블록요소는 한줄 전체를 다쓰기때문에)-->
+    <!-- img는 인라인요소이고 ul은 블록요소이기떄문에 ul속성(display)를 inline-block으로 두속성을 둘다 주어 img옆에 ul이 올수있게하므로 사진옆에 내용이 오게함 -->
+</body>
+</html>

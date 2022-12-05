@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            display: block;
+            color:#f00 ;
+            text-decoration: none;
+        }
+/* a태그 안에는 4가지속성이있음 > 유툽참고
+ a:link
+ a:visited
+ a: */
+        a:link {
+        color: #f00;
+        text-decoration: none;
+        }
+        a:visited {
+        color: #0f0;
+        }
+        a:hover {
+            color: blue;
+        }
+        a:active {
+            color: #ff0;
+        }
+        p {
+            height: 800px;
+        }
+    </style>
+</head>
+<body>
+    <a href="http://www.naver.com" target="_blank">네이버 </a>
+    <a href="http://www.daum.net" target="new">다음</a>
+    <a href="1005_02_b.html" target="_blank">1005_02_b페이지로이동</a>
+
+    <a href="#first" target="_blank">첫번째 p로 이동</a>
+    <a href="#second" target="_blank">두번째 p로 이동</a> <br>
+    <!-- 앞에 #을 꼭써줘야 이동한다고함. 이건 페이지 내부에서 이동하는것 -->
+    <a href="1005_02_b.html#news">8페이지의 뉴스</a><br>
+    <a href="1005_02_b.html#shopping">8페이지의 쇼핑</a>
+    <a href="mailto:withme.1004vgmail.com">관리자이메일</a>
+    <span onclick="window.open('http://www.naver.com') ">naver</span>
+    <p id="first">first</p>
+    <p id="second">second</p>
+</body>
+</html>

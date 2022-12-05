@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: o;
+        }
+        a {
+            text-decoration: none;
+        }
+        ul {
+            list-style: none;
+        }
+        .top {
+            background-color: red;
+        }
+        .top_wrap {
+            width: 1025px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        /* 하위요소에 float을 주면 상위요소 (부모)가 높이를 잃어버리기 때문에 owerflow로 높이를 찾아줌 */
+        .one {
+            float: right;
+        }
+        .one li {
+            float: left;
+        }
+        .one li a {
+            color: #fff;
+            padding: 10px;
+        }
+        .two {
+            float: left;
+        }
+        .head {
+            width: 1025px;
+            margin: 0 auto;
+        }
+        .logo {
+            float: left;
+        }
+        .gnb {
+            float: right;
+        }
+        .gnb ul li {
+            float: left;
+            padding: 10px;
+        }
+        .gnb a {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="top_wrap">
+            <ul class="one">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#"> 회원가입</a></li>
+                <li><a href="#"> English</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="head">
+        <div class="logo"><img src="image/logo.gif" alt="logo"></div>
+        <div class="gnb">
+            <ul>
+                <li><a href="#">영화예매</a></li>
+                <li><a href="#">신작개봉</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">CGV매점</a></li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        
+    </div>
+</body>
+</html>

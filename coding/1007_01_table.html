@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table태그</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            /* 여백없이 칸을 붙여주기 때문에 table태그를 쓸때 꼭 사용해야하는 속성이다 */
+            border-top: 1px solid #070;
+        }
+        /* border에도 여러가지가 있음 > top은 상위만 left는 왼쪽 > collapse 는 여백없이 붙게*/
+        /* tr:first-child {
+           
+        }
+        tr:last-child {
+            
+        } */
+        /* 생성되는 보더 개체는 모두 사각모형으로 생겼다
+        테이블은 가장큰겉면의 네모사각줄, tr은 가로네모줄, td는 가장작은 한칸의 네모줄이다
+        애초에 주지 않을 줄은 서식을 안입히면 되지만 > 겹치는 줄이 있는데 없애보이고 싶을때는 border에 none을 준다 */
+        td {
+            
+            border-bottom: 1px solid #000;
+            padding: 10px;
+            /* 네모칸안쪽에 여백을 줌 */
+            background-color: aqua;
+            /* backround color > 배경색 */
+            /* border을 안주고 싶은 부위에는 꼭 none!!!! */
+        }
+        .op {
+            background-color: blueviolet;
+        }
+        /* td에 first child를 주면 첫번째 새로칸에만 줄이 들어가고
+        td한칸에 class를 지정하여 줄을 준다면 그칸의 줄만 들어간다 */
+        td:last-child {
+            border-left: 1px solid #070;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <!-- 칸을 만들기 위한 탁자태그라고 생각하면됨 -->
+        <!-- table태그 다음에는 tr > td순으로 나와야한다 -->
+        <tr>  
+            <!-- tr > 행/td > 열 -->
+            <td class="op">셀1</td>
+            <!-- 특정 개체한테만 백그라운드 컬러를 넣을땐 class로 이름을 붙혀서 서식을 입혀주기 -->
+            <td>셀2</td>
+            <td>셀3</td>
+        </tr>
+        <tr>
+            <td class="op">셀1</td>
+            <td>셀2</td>
+            <td>셀3</td>
+        </tr>
+        <tr>
+            <td>셀1</td>
+            <td>셀2</td>
+            <td>셀3</td>
+        </tr>
+    </table>
+    <!-- table은 tr 3개를 자식으로 하고 tr은 td 3개를 자식으로 한다 -->
+</body>
+</html>

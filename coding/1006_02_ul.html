@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ul연습</title>
+    <style>
+        ul.a01 {
+            list-style-image: url(images/ico_bbslist.gif);
+            margin: 0px;
+            padding: 6px;
+        }
+        ul.a02 {
+            list-style: none;
+            margin: 0px;
+        }
+        ol {
+            list-style-image: url(images/ico_bbslist.gif);
+            margin: 0px;
+            padding: 6px;
+        }
+        ul.a03 {
+            list-style-image: url(images/ico_bbslist.gif);
+            margin: 0px;
+        }
+        ul.one {
+            list-style: square;
+        }
+    </style>
+</head>
+<body>
+    <ul class="a01">
+        <li>리스트1</li>
+        <li>리스트2</li>
+        <li>리스트3</li>
+        <li>리스트4</li>
+    </ul>
+    <ul class="a02">
+        <li>리스트41</li>
+        <li>리스트42</li>
+        <li>리스트43</li>
+    </ul>
+    <ol>
+        <li>리스트5</li>
+    </ol>
+    <ul class="a03">
+        <li>리스트51</li>
+        <li>리스트52</li>
+        <li>리스트53</li>
+    </ul>
+
+    <ul>
+        <li>리스트1</li>
+        <li>리스트2</li>
+        <li>리스트3</li>
+        <li>리스트4
+            <ul class="one">
+                <li>리스트41</li>
+                <li>리스트42</li>
+                <li>리스트43</li>
+            </ul>
+        </li>
+        <li>리스트5</li>
+        <!-- 이렇게 li안에 ul안에 다시 li를 넣어 서랍정리하듯이 정리하는 방법도있음 -->
+        
+    </ul>
+</body>
+</html>

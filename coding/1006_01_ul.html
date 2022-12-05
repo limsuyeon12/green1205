@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ul태그</title>
+    <style>
+        * {
+            /* margin: 0;
+            padding: 0; */
+        }
+        /* margin바깥여백 padding안쪽여백 >  */
+        ul.a01 {
+            list-style-type: square;
+            /* 점 스타일을 네모로줌 */
+            margin: 10px 20px 30px 40px;
+                /* 위   오른 아래  왼 */ 
+                /* 10px 20px만 있을경우 위,아래/오른,왼 이렇게 픽셀크기가돔 */
+            padding: 20px;
+            border: 1px solid #000;
+        }
+        /* .a01, .a02, p, li { } : 그룹선택 > 원하는 서식을 ,로 한꺼번에 선택할수있음 */
+        ol {
+            list-style-type: lower-roman;
+            /* 숫자 스타일을 로만으로 줌 */
+            margin: 20px;
+            padding: 20px;
+        }
+        /* ul은 기본이 점으로나오는 태그, ol은 숫자로 나오는태그 */
+        /* ul은 .이므로 순서가 상관없는 곳에 쓰는게좋음, ol은 순서대로 숫자가 나오므로 순서를줘야하는 곳에 쓰는게좋음 */
+        ol#im {
+            list-style-image: url(images/ico_bbslist.gif);
+        }
+        /* class는 style을 줄때 .으로 시작 / id는 #으로 시작하는게 규칙 */
+    </style>
+</head>
+<body>
+    <p class="a01">클래스이름이 a01</p>
+    <ul class="a01">
+        <li>리스트1</li>
+        <li>리스트2</li>
+        <li>리스트3</li>
+        <li>리스트4</li>
+    </ul>
+    <!-- class를 사용하는 이유:중복사용하기위해 -->
+    <ul class="a02">
+        <li>리스트1</li>
+        <li>리스트2</li>
+        <li>리스트3</li>
+        <li>리스트4</li>
+    </ul>
+    <!-- ul의 자식요소 : li만됨/-->
+    <ol>
+        <li>리스트1</li>
+        <li>리스트2</li>
+        <li>리스트3</li>
+        <li>리스트4</li>
+    </ol>
+    <ol id="im">
+        <li>리스트1</li>
+        <li>리스트2</li>
+        <li>리스트3</li>
+        <li>리스트4
+            <ul>
+                <li>리스트</li>
+                <li>리스트</li>
+                <li>리스트</li>
+                <li>리스트</li>
+            </ul>
+        </li>
+    </ol>
+    <!-- ul이나ol은 자식요소로 li만 , but li는 다른요소를 자식으로 가져올수있다 -->
+    <!-- li는 단독으로 사용이불가함 ul과ol안에서만 사용가능 -->
+</body>
+</html>
